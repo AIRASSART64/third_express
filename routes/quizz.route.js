@@ -5,15 +5,15 @@ const questions = [
   {
     step: 0,
     type: "multiple",
-    question: "Quelle est la capitale des Etats-Unis ?",
-    options: ["New-York", "Los Angeles", "Washington", "Miami"],
-    correctAnswer: "Washington",
+    question: "Quel hook React permet de gérer l'état local d'un composant fonctionnel ?",
+    options: ["useEffect", "useState", "useMemo", "useReducer "],
+    correctAnswer: "useState",
   },
   {
     step: 1,
     type: "open",
-    question: "Combien font 100 - 50 ",
-    correctAnswer: "50",
+    question: "Quel mot-clé utilise-t-on pour déclarer une variable qui ne peut pas être réassignée en JavaScript ?",
+    correctAnswer: "const",
   },
   {
     step: 2,
