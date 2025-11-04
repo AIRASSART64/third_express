@@ -15,12 +15,29 @@ const questions = [
     question: "Quel mot-clé utilise-t-on pour déclarer une variable qui ne peut pas être réassignée en JavaScript ?",
     correctAnswer: "const",
   },
-  {
+    {
     step: 2,
+    type: "multiple",
+    question: "Laquelle de ces méthodes permet de transformer une chaîne de caractères en nombre entier en JavaScript ?",
+    options: ["parseInt()", "JSON.parse()", "Number.toInt()", "Math.convert()"],
+    correctAnswer: "parseInt()",
+  },
+  {
+    step: 3,
+    type: "open",
+    question: "Quel mot-clé React utilise-t-on pour renvoyer du contenu à afficher dans un composant ?",
+    correctAnswer: "return",
+  },
+  {
+    step: 4,
     type: "success",
     message: "Félicitations, vous avez terminé le quiz !",
   },
 ];
+
+router.get('/', (req, res) => {
+  res.status(200).json({ total: questions.length });
+});
 
 
 router.get('/check', (req, res) => { // route specifique
